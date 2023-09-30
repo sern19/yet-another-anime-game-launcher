@@ -38,6 +38,9 @@ Go to [Release](https://github.com/3Shain/yet-another-anime-game-launcher/releas
 
 ### Setup
 ```sh
+brew install nvm 
+nvm install 19.4.0
+nvm set 19.4.0 
 git clone https://github.com/3Shain/yet-another-anime-game-launcher
 cd yet-another-anime-game-launcher
 pnpm install
@@ -56,7 +59,7 @@ pnpm run start-hk4eos
 
 ### Build
 ```sh
-node ./build-app.js
+YAAGL_CHANNEL_CLIENT=hk4eos YAAGL_ADVANCED_ENABLE=1 node ./build-app.js
 ```
 
 ## Uninstall (completely)
