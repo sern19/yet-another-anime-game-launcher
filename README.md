@@ -40,7 +40,7 @@ Go to [Release](https://github.com/3Shain/yet-another-anime-game-launcher/releas
 ```sh
 brew install nvm 
 nvm install 19.4.0
-nvm set 19.4.0 
+nvm use 19.4.0 
 git clone https://github.com/3Shain/yet-another-anime-game-launcher
 cd yet-another-anime-game-launcher
 pnpm install

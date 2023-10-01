@@ -64,7 +64,7 @@ ${await (async () => {
   if (config.fpsUnlock !== "default") {
     return `"${wine.toWinePath(
       resolve("./fpsunlock/genshin-force-fps.exe")
-    )}" -f ${config.fpsUnlock} -o "${wine.toWinePath(
+    )}" -f ${config.fpsUnlock} -n -o "${wine.toWinePath(
       join(gameDir, gameExecutable)
     )}"`;
   } else {
