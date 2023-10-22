@@ -19,7 +19,7 @@ import { Config } from "./config-def";
 
 declare module "./config-def" {
   interface Config {
-    fpsUnlock: "default" | "120" | "144";
+    fpsUnlock: "default" | "95" | "120" | "144";
   }
 }
 
@@ -33,7 +33,7 @@ export default async function ({
   config: Partial<Config>;
 }) {
   try {
-    config.fpsUnlock = (await getKey(CONFIG_KEY)) as "default" | "120" | "144";
+    config.fpsUnlock = (await getKey(CONFIG_KEY)) as "default" | "95" | "120" | "144";
   } catch {
     config.fpsUnlock = "default"; // default value
   }
@@ -75,6 +75,10 @@ export default async function ({
                     {
                       name: locale.get("SETTING_FPS_UNLOCK_DEFAULT"),
                       value: "default",
+                    },
+                    {
+                      name: "95Hz",
+                      value: "95",
                     },
                     {
                       name: "120Hz",

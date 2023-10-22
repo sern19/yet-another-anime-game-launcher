@@ -64,7 +64,7 @@ export async function createWine(options: {
 
   function getEnvironmentVariables() {
     return {
-      WINEESYNC: "1",
+      WINEMSYNC: "1",
       WINEDEBUG: "fixme-all,err-unwind,+timestamp",
       WINEPREFIX: options.prefix,
       GIWINEPCNAME: `${netbiosname}`,
